@@ -1,0 +1,23 @@
+{:paths ["./src"]
+
+ :deps {org.clojure/clojurescript {:mvn/version "1.11.4"}
+        org.clojure/core.async {:mvn/version "1.5.648"}}
+
+ :aliases
+ {:shadow {:extra-deps {thheller/shadow-cljs {:mvn/version "2.18.0"}
+                       nrepl/nrepl {:mvn/version "0.8.3"}
+                       cider/cider-nrepl {:mvn/version "0.25.5"}
+                       cider/piggieback {:mvn/version "0.5.2"}}}
+
+  :main {:extra-deps {clojure.test.check/clojure.test.check {:git/url "https://github.com/clojure/test.check"
+                                                             :sha "b6a318af92e836f1f20960f38a5944168b88d60d"}
+
+                      Arthur-Dent/Arthur-Dent {:git/url "https://github.com/move-me-to-ipfs-shipyard/Arthur-Dent"
+                                               :sha "bd75f8b4f03a1471e7d326ce9b7b8d074205bae5"
+                                               :deps/root "datahike-90891e21cdfde6386861602d9f8231a3307da77d"
+                                               :exclusions []} #_{:local/root "../Arthur-Dent/datahike-90891e21cdfde6386861602d9f8231a3307da77d"}}}
+
+  :ui {:extra-deps {#_Cusco
+                    reagent/reagent {:mvn/version "1.1.1"}
+                    sci/sci {:git/url "https://github.com/borkdude/sci"
+                             :sha "6c10e494371a37a56bef45c8148435888bae3a45"}}}}}
