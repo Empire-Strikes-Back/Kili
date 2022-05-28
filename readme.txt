@@ -1,1 +1,1 @@
-i am dgraph-scout program - i explore dgraph
+i will not hide behind a wall of stone while others fight our battles for us! it is not in my blood, Thorin
